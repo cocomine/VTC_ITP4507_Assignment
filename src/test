@@ -1,0 +1,215 @@
+Enter Building Type (a=Apartment/h=House):
+Building No.: Monthly Rental: Support Staff: Number of rooms: Room No. 1 :
+Length: Width: Room No. 2 :
+Length: Width: New Building Added:
+Building No: 1001
+Support Staff: Alan Po
+Monthly Rental: 21000.0
+Room No.: 1, Length: 15.0, Width: 20.0
+Room No.: 2, Length: 10.0, Width: 20.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Enter Building Type (a=Apartment/h=House):
+Building No.: Monthly Rental: Support Staff: Number of rooms: Room No. 1 :
+Length: Width: New Building Added:
+Building No: 1002
+Support Staff: Peter Chan
+Monthly Rental: 24000.0
+Room No.: 1, Length: 7.0, Width: 10.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Enter Building No.(* to display all):
+Building No: 1001
+Support Staff: Alan Po
+Monthly Rental: 21000.0
+Room No.: 1, Length: 15.0, Width: 20.0
+Room No.: 2, Length: 10.0, Width: 20.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Enter Building Type (a=Apartment/h=House):
+Building No.: No. of Floors: Number of rooms: Room No. 1 :
+Length: Width: Room No. 2 :
+Length: Width: Room No. 3 :
+Length: Width: New Building Added:
+Building No: 2001
+No of Floors: 2
+Room No.: 1, Length: 12.0, Width: 10.0
+Room No.: 2, Length: 20.0, Width: 10.0
+Room No.: 3, Length: 18.0, Width: 20.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Enter Building No.(* to display all):
+Building No.: 1001, Support Staff: Alan Po, Monthly Rental: 21000.0
+Building No.: 1002, Support Staff: Peter Chan, Monthly Rental: 24000.0
+Building No.: 2001, No. of Floors: 2
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Enter Building No.: Building No.: 1001, Support Staff: Alan Po, Monthly Rental: 21000.0
+Modify Monthly Rental: Modify Support Staff: Building is modified:
+Building No.: 1001, Support Staff: John Chan, Monthly Rental: 18000.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Enter Building No.: Building No.: 2001, No. of Floors: 2
+No. of Floors: Building is modified:
+Building No.: 2001, No. of Floors: 3
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Building No.: Room No.: 1, Length: 15.0, Width: 20.0
+Room No.: 2, Length: 10.0, Width: 20.0
+
+Please enter command: [a|d|m]
+a = add room, d = delete room, m = modify room
+Length: Width: Updated Building:
+Building No: 1001
+Support Staff: John Chan
+Monthly Rental: 18000.0
+Room No.: 1, Length: 15.0, Width: 20.0
+Room No.: 2, Length: 10.0, Width: 20.0
+Room No.: 3, Length: 12.0, Width: 14.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Building No.: Room No.: 1, Length: 15.0, Width: 20.0
+Room No.: 2, Length: 10.0, Width: 20.0
+Room No.: 3, Length: 12.0, Width: 14.0
+
+Please enter command: [a|d|m]
+a = add room, d = delete room, m = modify room
+Room No.:
+Length: Width: Updated Building:
+Building No: 1001
+Support Staff: John Chan
+Monthly Rental: 18000.0
+Room No.: 1, Length: 15.0, Width: 20.0
+Room No.: 2, Length: 9.0, Width: 18.0
+Room No.: 3, Length: 12.0, Width: 14.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Building No.: Room No.: 1, Length: 15.0, Width: 20.0
+Room No.: 2, Length: 9.0, Width: 18.0
+Room No.: 3, Length: 12.0, Width: 14.0
+
+Please enter command: [a|d|m]
+a = add room, d = delete room, m = modify room
+Room No.:
+Updated Building:
+Building No: 1001
+Support Staff: John Chan
+Monthly Rental: 18000.0
+Room No.: 1, Length: 9.0, Width: 18.0
+Room No.: 2, Length: 12.0, Width: 14.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Enter Building No.(* to display all):
+Building No: 1001
+Support Staff: John Chan
+Monthly Rental: 18000.0
+Room No.: 1, Length: 9.0, Width: 18.0
+Room No.: 2, Length: 12.0, Width: 14.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Undo List:
+Delete Room: Building No. 1001, Room No. 1, Length: 15.0, Width: 20.0
+Modify Room: Building No. 1001, Room No. 2, Length: 9.0, Width: 18.0
+Add Room: Building No. 1001, Room No. 3, Length: 12.0, Width: 14.0
+Modify Building: Building No. 2001, No. of Floor: 3
+Modify Building: Building No. 1001, Support Staff: John Chan, Monthly Rental: 18000.0
+Add Building: Building No.: 2001, No. of Floor: 2
+Add Building: Building No.: 1002, Support Staff: Peter Chan, Monthly Rental: 24000.0
+Add Building: Building No.: 1001, Support Staff: Alan Po, Monthly Rental: 21000.0
+Redo List:
+Nothing to Redo.
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Undo List:
+Modify Building: Building No. 2001, No. of Floor: 3
+Modify Building: Building No. 1001, Support Staff: John Chan, Monthly Rental: 18000.0
+Add Building: Building No.: 2001, No. of Floor: 2
+Add Building: Building No.: 1002, Support Staff: Peter Chan, Monthly Rental: 24000.0
+Add Building: Building No.: 1001, Support Staff: Alan Po, Monthly Rental: 21000.0
+Redo List:
+Add Room: Building No. 1001, Room No. 3, Length: 12.0, Width: 14.0
+Modify Room: Building No. 1001, Room No. 2, Length: 9.0, Width: 18.0
+Delete Room: Building No. 1001, Room No. 1, Length: 15.0, Width: 20.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Enter Building No.(* to display all):
+Building No: 1001
+Support Staff: John Chan
+Monthly Rental: 18000.0
+Room No.: 1, Length: 15.0, Width: 20.0
+Room No.: 2, Length: 10.0, Width: 20.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Undo List:
+Modify Room: Building No. 1001, Room No. 2, Length: 9.0, Width: 18.0
+Add Room: Building No. 1001, Room No. 3, Length: 12.0, Width: 14.0
+Modify Building: Building No. 2001, No. of Floor: 3
+Modify Building: Building No. 1001, Support Staff: John Chan, Monthly Rental: 18000.0
+Add Building: Building No.: 2001, No. of Floor: 2
+Add Building: Building No.: 1002, Support Staff: Peter Chan, Monthly Rental: 24000.0
+Add Building: Building No.: 1001, Support Staff: Alan Po, Monthly Rental: 21000.0
+Redo List:
+Delete Room: Building No. 1001, Room No. 1, Length: 15.0, Width: 20.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
+Enter Building No.(* to display all):
+Building No: 1001
+Support Staff: John Chan
+Monthly Rental: 18000.0
+Room No.: 1, Length: 15.0, Width: 20.0
+Room No.: 2, Length: 9.0, Width: 18.0
+Room No.: 3, Length: 12.0, Width: 14.0
+
+Building Management System (BMS)
+Please enter command: [a|d|m|e|u|r|l|x]
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
