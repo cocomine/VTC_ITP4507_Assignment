@@ -2,20 +2,18 @@ package com.command;
 
 import com.building.Building;
 import com.building.Room;
-import com.factory.RoomFactory;
-import com.memento.Memento;
 import com.memento.RoomMemento;
 
 import java.util.Scanner;
 import java.util.Stack;
 
 public class addRoomCmd implements Command{
-    private Building building;
+    private final Building building;
     private Room room;
     private int index;
-    private Stack<Command> undoList;
-    private Stack<Command> redoList;
-    private Scanner sc;
+    private final Stack<Command> undoList;
+    private final Stack<Command> redoList;
+    private final Scanner sc;
     private RoomMemento memento;
 
     /**
@@ -36,8 +34,11 @@ public class addRoomCmd implements Command{
     @Override
     public void execute(){
         //create
-        room = RoomFactory.createRoom(sc);
-        building.addRoom(room);
+        System.out.print("Length: ");
+        double length = sc.nextDouble();
+        System.out.print("Width: ");
+        double width = sc.nextDouble();
+        room = building.addRoom(length, width);
         index = building.getRooms().indexOf(room);
         memento = new RoomMemento(room);
 

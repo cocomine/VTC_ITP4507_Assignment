@@ -2,7 +2,6 @@ package com.factory;
 
 import com.building.Building;
 import com.building.House;
-import com.building.Room;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -28,8 +27,11 @@ public class HouseFactory{
         // Create Room
         for(int i = 0 ; i < noOfRooms ; i++){
             System.out.println("Room No. "+(i+1)+" :");
-            Room room = RoomFactory.createRoom(sc);
-            house.addRoom(room);
+            System.out.print("Length: ");
+            double length = sc.nextDouble();
+            System.out.print("Width: ");
+            double width = sc.nextDouble();
+            house.addRoom(length, width);
         }
         return house;
     }

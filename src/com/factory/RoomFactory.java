@@ -2,20 +2,15 @@ package com.factory;
 
 import com.building.Room;
 
-import java.util.Scanner;
-
 public class RoomFactory{
+
     /**
-     * Create Room
-     * @param sc Scanner
+     * create Room
+     * @param length Length
+     * @param width Width
      * @return Room
      */
-    public static Room createRoom (Scanner sc){
-        System.out.print("Length: ");
-        double length = sc.nextDouble();
-        System.out.print("Width: ");
-        double width = sc.nextDouble();
-
+    public static Room createRoom(double length, double width){
         return new Room(length, width);
     }
 }

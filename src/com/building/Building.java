@@ -1,11 +1,13 @@
 package com.building;
 
+import com.factory.RoomFactory;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public abstract class Building{
-    private int id;
-    private ArrayList<Room> rooms;
+    private final int id;
+    private final ArrayList<Room> rooms;
 
     /**
      * Building
@@ -35,10 +37,13 @@ public abstract class Building{
 
     /**
      * Add room
-     * @param room Room
+     * @param length Length
+     * @param width Width
      */
-    public void addRoom(Room room){
+    public Room addRoom(double length, double width){
+        Room room = RoomFactory.createRoom(length, width);
         rooms.add(room);
+        return room;
     }
 
     /**

@@ -8,12 +8,12 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class deleteRoomCmd implements Command{
-    private Building building;
+    private final Building building;
     private Room room;
     private int index;
-    private Stack<Command> undoList;
-    private Stack<Command> redoList;
-    private Scanner sc;
+    private final Stack<Command> undoList;
+    private final Stack<Command> redoList;
+    private final Scanner sc;
     private RoomMemento memento;
 
     /**
@@ -36,7 +36,8 @@ public class deleteRoomCmd implements Command{
         System.out.println("Room No.:");
         index = sc.nextInt() - 1;
         if(index < building.getRoomQty() && index >= 0){
-            room = building.getRooms().remove(index); //remove
+            room = building.getRooms().get(index);
+            building.deleteRooms(index);//remove
             memento = new RoomMemento(room);
 
             System.out.println("Updated Building:");
