@@ -3,14 +3,12 @@ package com.command;
 import com.building.Building;
 
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.Vector;
 
 public class displayBuildingCmd implements Command{
 
-    private HashMap<Integer, Building> buildings;
-    private Scanner sc;
+    private final HashMap<Integer, Building> buildings;
+    private final Scanner sc;
 
     /**
      * Display Building Command

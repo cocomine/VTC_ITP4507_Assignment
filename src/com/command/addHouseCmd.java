@@ -1,9 +1,7 @@
 package com.command;
 
-import com.building.Apartment;
 import com.building.Building;
 import com.building.House;
-import com.factory.ApartmentFactory;
 import com.factory.HouseFactory;
 
 import java.util.HashMap;

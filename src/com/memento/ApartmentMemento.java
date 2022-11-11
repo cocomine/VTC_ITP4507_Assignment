@@ -3,9 +3,9 @@ package com.memento;
 import com.building.Apartment;
 
 public class ApartmentMemento implements BuildingMemento{
-    private Apartment apartment;
-    private double monthlyRental;
-    private String supportStaff;
+    private final Apartment apartment;
+    private final double monthlyRental;
+    private final String supportStaff;
 
     /**
      * Apartment Memento

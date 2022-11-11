@@ -6,10 +6,9 @@ import com.memento.BuildingCaretaker;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Stack;
-import java.util.Vector;
 
 public class Main{
-    public static Scanner sc = new Scanner(System.in);
+    public static final Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args){
         HashMap<Integer, Building> buildings = new HashMap<>(); //building save list

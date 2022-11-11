@@ -3,8 +3,8 @@ package com.command;
 import java.util.Stack;
 
 public class redoCmd implements Command{
-    private Stack<Command> undoList;
-    private Stack<Command> redoList;
+    private final Stack<Command> undoList;
+    private final Stack<Command> redoList;
 
     /**
      * Redo Command

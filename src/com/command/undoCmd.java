@@ -4,8 +4,8 @@ import java.util.Stack;
 
 public class undoCmd implements Command{
 
-    private Stack<Command> undoList;
-    private Stack<Command> redoList;
+    private final Stack<Command> undoList;
+    private final Stack<Command> redoList;
 
     /**
      * Undo Command

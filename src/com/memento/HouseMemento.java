@@ -4,8 +4,8 @@ import com.building.Building;
 import com.building.House;
 
 public class HouseMemento implements BuildingMemento{
-    private House house;
-    private int noOfFloors;
+    private final House house;
+    private final int noOfFloors;
 
     public HouseMemento(House house){
         this.house = house;

@@ -1,6 +1,5 @@
 package com.command;
 
-import com.building.Apartment;
 import com.building.House;
 import com.memento.BuildingCaretaker;
 

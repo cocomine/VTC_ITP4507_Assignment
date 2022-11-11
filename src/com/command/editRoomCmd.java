@@ -8,10 +8,10 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class editRoomCmd implements Command{
-    private HashMap<Integer, Building> buildings;
-    private Stack<Command> undoList;
-    private Stack<Command> redoList;
-    private Scanner sc;
+    private final HashMap<Integer, Building> buildings;
+    private final Stack<Command> undoList;
+    private final Stack<Command> redoList;
+    private final Scanner sc;
 
 
     public editRoomCmd(HashMap<Integer, Building> buildings, Stack<Command> undoList, Stack<Command> redoList, Scanner sc){

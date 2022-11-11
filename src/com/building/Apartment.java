@@ -1,6 +1,5 @@
 package com.building;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Apartment extends Building{
