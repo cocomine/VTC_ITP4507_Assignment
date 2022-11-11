@@ -2,10 +2,7 @@ package com.factory;
 
 import com.building.Building;
 import com.command.*;
-import com.command.Room.addRoomCmd;
-import com.command.Room.deleteRoomCmd;
-import com.command.Room.editRoomCmd;
-import com.command.Room.modifyRoomCmd;
+import com.command.room.editRoomCmd;
 import com.command.building.addBuildingCmd;
 import com.command.building.modifyBuildingCmd;
 import com.memento.BuildingCaretaker;
@@ -38,22 +35,5 @@ public class CommandFactory{
         };
 
 
-    }
-
-    /**
-     * Create Edit Room Command
-     * @param building Building
-     * @param undoList Undo list
-     * @param redoList Redo list
-     * @param sc Scanner
-     * @return Command
-     */
-    public static Command createRoomCmd(Building building, Stack<Command> undoList, Stack<Command> redoList, Scanner sc, RoomCaretaker roomCaretaker){
-        return switch(sc.next()){
-            case "a" -> new addRoomCmd(building, undoList, redoList, sc);
-            case "d" -> new deleteRoomCmd(building, undoList, redoList, sc);
-            case "m" -> new modifyRoomCmd(building, undoList, redoList, sc, roomCaretaker);
-            default -> null;
-        };
     }
 }

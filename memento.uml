@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.memento</OriginalElement>
+  <nodes>
+    <node x="-125.0" y="250.5">com.memento.HouseMemento</node>
+    <node x="83.0" y="239.0">com.memento.ApartmentMemento</node>
+    <node x="-339.0" y="18.0">com.memento.BuildingCaretaker</node>
+    <node x="339.0" y="239.0">com.memento.RoomCaretaker</node>
+    <node x="123.50000000000003" y="-86.0">com.memento.Memento</node>
+    <node x="194.0" y="18.0">com.memento.RoomMemento</node>
+    <node x="-3.9999999999999716" y="76.5">com.memento.BuildingMemento</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.memento.BuildingCaretaker" target="com.memento.HouseMemento" relationship="CREATE">
+      <point x="-0.0" y="-85.5" />
+      <point x="-214.0" y="155.5" />
+      <point x="-103.5" y="155.5" />
+      <point x="-72.5" y="-61.0" />
+    </edge>
+    <edge source="com.memento.RoomMemento" target="com.memento.Memento" relationship="REALIZATION">
+      <point x="0.0" y="-85.5" />
+      <point x="287.0" y="-7.0" />
+      <point x="217.25" y="-7.0" />
+      <point x="31.25" y="27.0" />
+    </edge>
+    <edge source="com.memento.BuildingCaretaker" target="com.memento.ApartmentMemento" relationship="CREATE">
+      <point x="-0.0" y="85.5" />
+      <point x="-214.0" y="434.5" />
+      <point x="196.5" y="434.5" />
+      <point x="-4.5" y="82.0" />
+    </edge>
+    <edge source="com.memento.HouseMemento" target="com.memento.BuildingMemento" relationship="REALIZATION">
+      <point x="0.0" y="-74.0" />
+      <point x="-31.0" y="214.0" />
+      <point x="85.00000000000003" y="214.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.memento.ApartmentMemento" target="com.memento.BuildingMemento" relationship="REALIZATION">
+      <point x="0.0" y="-85.5" />
+      <point x="201.0" y="214.0" />
+      <point x="85.00000000000003" y="214.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.memento.RoomCaretaker" target="com.memento.RoomMemento" relationship="CREATE">
+      <point x="119.5" y="-0.0" />
+      <point x="363.5" y="324.5" />
+      <point x="76.5" y="86.0" />
+    </edge>
+    <edge source="com.memento.BuildingCaretaker" target="com.memento.BuildingMemento" relationship="DEPENDENCY">
+      <point x="-15.0" y="-85.5" />
+      <point x="-229.0" y="103.5" />
+      <point x="70.00000000000003" y="103.5" />
+      <point x="-15.0" y="-27.0" />
+    </edge>
+    <edge source="com.memento.BuildingMemento" target="com.memento.Memento" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-27.0" />
+      <point x="85.00000000000003" y="-7.0" />
+      <point x="154.75" y="-7.0" />
+      <point x="-31.25" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="分层" zoom="0.8" showDependencies="true" x="369.875" y="242.265625" />
+  <SelectedNodes />
+  <Categories>
+    <Category>字段</Category>
+    <Category>方法</Category>
+    <Category>构造函数</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.building</OriginalElement>
+  <nodes>
+    <node x="690.25" y="262.0">com.factory.RoomFactory</node>
+    <node x="628.0" y="-155.0">com.building.Room</node>
+    <node x="268.5" y="-155.0">com.building.Building</node>
+    <node x="171.0" y="204.0">com.building.House</node>
+    <node x="408.0" y="204.0">com.building.Apartment</node>
+    <node x="291.0" y="522.5">com.factory.ApartmentFactory</node>
+    <node x="-191.25" y="-85.5">com.factory.HouseFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.building.Building" target="com.factory.RoomFactory" relationship="DEPENDENCY">
+      <point x="136.5" y="80.0" />
+      <point x="705.5" y="79.5" />
+      <point x="-112.25" y="-39.0" />
+    </edge>
+    <edge source="com.factory.RoomFactory" target="com.building.Room" relationship="CREATE">
+      <point x="-97.25" y="-39.0" />
+      <point x="-0.0" y="108.5" />
+    </edge>
+    <edge source="com.building.Building" target="com.building.Room" relationship="TO_MANY">
+      <point x="136.5" y="-46.0" />
+      <point x="-92.5" y="-0.0" />
+    </edge>
+    <edge source="com.factory.HouseFactory" target="com.building.Building" relationship="DEPENDENCY">
+      <point x="191.5" y="0.0" />
+      <point x="-136.5" y="-46.0" />
+    </edge>
+    <edge source="com.building.Apartment" target="com.building.Building" relationship="GENERALIZATION">
+      <point x="0.0" y="-131.5" />
+      <point x="530.5" y="179.0" />
+      <point x="405.0" y="179.0" />
+      <point x="0.0" y="154.5" />
+    </edge>
+    <edge source="com.factory.ApartmentFactory" target="com.building.Apartment" relationship="CREATE">
+      <point x="18.5" y="-32.5" />
+      <point x="525.0" y="497.25" />
+      <point x="525.0" y="464.0" />
+      <point x="36.5" y="128.5" />
+    </edge>
+    <edge source="com.building.House" target="com.building.Building" relationship="GENERALIZATION">
+      <point x="0.0" y="-97.0" />
+      <point x="279.5" y="179.0" />
+      <point x="405.0" y="179.0" />
+      <point x="0.0" y="154.5" />
+    </edge>
+    <edge source="com.factory.ApartmentFactory" target="com.building.Building" relationship="DEPENDENCY">
+      <point x="215.5" y="0.0" />
+      <point x="671.625" y="561.5" />
+      <point x="671.625" y="130.0" />
+      <point x="136.0" y="130.5" />
+    </edge>
+    <edge source="com.factory.HouseFactory" target="com.building.House" relationship="CREATE">
+      <point x="184.0" y="39.0" />
+      <point x="-95.25" y="-97.0" />
+    </edge>
+  </edges>
+  <settings layout="分层" zoom="1.0" showDependencies="true" x="553.5" y="287.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>字段</Category>
+    <Category>方法</Category>
+    <Category>构造函数</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

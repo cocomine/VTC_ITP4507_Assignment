@@ -1,8 +1,7 @@
-package com.command.Room;
+package com.command.room;
 
 import com.building.Building;
 import com.command.Command;
-import com.factory.CommandFactory;
 import com.memento.RoomCaretaker;
 
 import java.util.HashMap;
@@ -36,7 +35,12 @@ public class editRoomCmd implements Command{
         System.out.println();
         System.out.println("Please enter command: [a|d|m]");
         System.out.println("a = add room, d = delete room, m = modify room");
-        Command cmd = CommandFactory.createRoomCmd(building, undoList, redoList, sc, roomCaretaker);
+        Command cmd = switch(sc.next()){
+            case "a" -> new addRoomCmd(building, undoList, redoList, sc);
+            case "d" -> new deleteRoomCmd(building, undoList, redoList, sc);
+            case "m" -> new modifyRoomCmd(building, undoList, redoList, sc, roomCaretaker);
+            default -> null;
+        };
         if(cmd != null) cmd.execute();
     }
 
