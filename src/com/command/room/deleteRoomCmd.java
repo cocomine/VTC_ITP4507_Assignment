@@ -1,4 +1,4 @@
-package com.command.Room;
+package com.command.room;
 
 import com.building.Building;
 import com.building.Room;
