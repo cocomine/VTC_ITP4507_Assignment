@@ -25,9 +25,4 @@ public class ApartmentMemento implements BuildingMemento{
         apartment.setMonthlyRental(monthlyRental);
         apartment.setSupportStaff(supportStaff);
     }
-
-    @Override
-    public String toString(){
-        return "Building No.: " + apartment.getId() + ", Support Staff: " + supportStaff + ", Monthly Rental: " + monthlyRental;
-    }
 }

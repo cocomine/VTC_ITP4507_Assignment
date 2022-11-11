@@ -2,6 +2,7 @@ package com.factory;
 
 import com.building.Building;
 import com.command.*;
+import com.memento.BuildingCaretaker;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -16,11 +17,11 @@ public class CommandFactory{
      * @param sc Scanner
      * @return Command
      */
-    public static Command createCmd(HashMap<Integer, Building> buildings, Stack<Command> undoList, Stack<Command> redoList, Scanner sc){
+    public static Command createCmd(HashMap<Integer, Building> buildings, Stack<Command> undoList, Stack<Command> redoList, Scanner sc, BuildingCaretaker buildingCaretaker){
         return switch(sc.next()){
             case "a" -> new addBuildingCmd(buildings, undoList, redoList, sc);
             case "d" -> new displayBuildingCmd(buildings, sc);
-            case "m" -> new modifyBuildingCmd(buildings, undoList, redoList, sc);
+            case "m" -> new modifyBuildingCmd(buildings, undoList, redoList, sc, buildingCaretaker);
             case "e" -> new editRoomCmd(buildings, undoList, redoList, sc);
             case "u" -> new undoCmd(undoList, redoList);
             case "r" -> new redoCmd(undoList, redoList);
