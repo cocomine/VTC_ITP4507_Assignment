@@ -56,6 +56,6 @@ public class modifyApartmentCmd implements Command{
     }
 
     public String toString(){
-        return "Modify Building: Building No. "+apartment.getId()+", Support Staff: "+supportStaff+", Support Staff: "+monthlyRental;
+        return "Modify Building: Building No. "+apartment.getId()+", Support Staff: "+supportStaff+", Monthly Rental: "+monthlyRental;
     }
 }

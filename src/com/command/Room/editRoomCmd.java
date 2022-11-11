@@ -1,6 +1,7 @@
-package com.command;
+package com.command.Room;
 
 import com.building.Building;
+import com.command.Command;
 import com.factory.CommandFactory;
 import com.memento.RoomCaretaker;
 

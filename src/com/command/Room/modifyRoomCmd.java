@@ -1,7 +1,8 @@
-package com.command;
+package com.command.Room;
 
 import com.building.Building;
 import com.building.Room;
+import com.command.Command;
 import com.memento.RoomCaretaker;
 
 import java.util.Scanner;
@@ -65,6 +66,6 @@ public class modifyRoomCmd implements Command{
 
     @Override
     public String toString(){
-        return "Modify Room: Building No. " + building.getId() + ", Room No. " + (index + 1) + "Length: "+length+", Width: "+width;
+        return "Modify Room: Building No. " + building.getId() + ", Room No. " + (index + 1) + ", Length: "+length+", Width: "+width;
     }
 }

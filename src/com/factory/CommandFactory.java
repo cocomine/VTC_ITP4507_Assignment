@@ -2,6 +2,10 @@ package com.factory;
 
 import com.building.Building;
 import com.command.*;
+import com.command.Room.addRoomCmd;
+import com.command.Room.deleteRoomCmd;
+import com.command.Room.editRoomCmd;
+import com.command.Room.modifyRoomCmd;
 import com.command.building.addBuildingCmd;
 import com.command.building.modifyBuildingCmd;
 import com.memento.BuildingCaretaker;

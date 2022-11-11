@@ -1,7 +1,8 @@
-package com.command;
+package com.command.Room;
 
 import com.building.Building;
 import com.building.Room;
+import com.command.Command;
 
 import java.util.Scanner;
 import java.util.Stack;

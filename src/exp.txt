@@ -128,8 +128,7 @@ Room No.: 2, Length: 12.0, Width: 14.0
 
 Building Management System (BMS)
 Please enter command: [a|d|m|e|u|r|l|x]
-a = add building, d = display buildings, m = modify building, e = edit rooms
-u = undo, r = redo, l = list undo/redo, x = exit system
+a = add building, d = display buildings, m = modify building, e = edit rooms, u = undo, r = redo, l = list undo/redo, x = exit system
 Undo List:
 Delete Room: Building No. 1001, Room No. 1, Length: 15.0, Width: 20.0
 Modify Room: Building No. 1001, Room No. 2, Length: 9.0, Width: 18.0
