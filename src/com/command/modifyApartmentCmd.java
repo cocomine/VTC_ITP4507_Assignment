@@ -8,11 +8,11 @@ import java.util.Stack;
 
 public class modifyApartmentCmd implements Command{
 
-    private Apartment apartment;
-    private Stack<Command> undoList;
-    private Stack<Command> redoList;
-    private Scanner sc;
-    private BuildingCaretaker buildingCaretaker;
+    private final Apartment apartment;
+    private final Stack<Command> undoList;
+    private final Stack<Command> redoList;
+    private final Scanner sc;
+    private final BuildingCaretaker buildingCaretaker;
     private double monthlyRental;
     private String supportStaff;
 

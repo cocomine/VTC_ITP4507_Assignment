@@ -8,11 +8,11 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class modifyHouseCmd implements Command{
-    private House house;
-    private Stack<Command> undoList;
-    private Stack<Command> redoList;
-    private Scanner sc;
-    private BuildingCaretaker buildingCaretaker;
+    private final House house;
+    private final Stack<Command> undoList;
+    private final Stack<Command> redoList;
+    private final Scanner sc;
+    private final BuildingCaretaker buildingCaretaker;
     private int noOfFloors;
 
     /**
@@ -50,5 +50,9 @@ public class modifyHouseCmd implements Command{
     @Override
     public void redo(){
         buildingCaretaker.redo();
+    }
+
+    public String toString(){
+        return "Modify Building: Building No. "+house.getId()+", No. of Floor: "+noOfFloors;
     }
 }

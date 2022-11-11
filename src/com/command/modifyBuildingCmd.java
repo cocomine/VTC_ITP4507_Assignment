@@ -10,11 +10,11 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class modifyBuildingCmd implements Command{
-    private HashMap<Integer, Building> buildings;
-    private Stack<Command> undoList;
-    private Stack<Command> redoList;
-    private Scanner sc;
-    private BuildingCaretaker buildingCaretaker;
+    private final HashMap<Integer, Building> buildings;
+    private final Stack<Command> undoList;
+    private final Stack<Command> redoList;
+    private final Scanner sc;
+    private final BuildingCaretaker buildingCaretaker;
 
     /**
      * Modify Building Command

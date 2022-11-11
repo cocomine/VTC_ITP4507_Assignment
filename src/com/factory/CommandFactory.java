@@ -26,9 +26,11 @@ public class CommandFactory{
             case "u" -> new undoCmd(undoList, redoList);
             case "r" -> new redoCmd(undoList, redoList);
             case "l" -> new listUndoRedoCmd(undoList, redoList);
-            case "x" -> new exitCmd();
+            case "x", "X" -> new exitCmd();
             default -> null;
         };
+
+
     }
 
     /**

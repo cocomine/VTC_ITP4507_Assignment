@@ -7,8 +7,8 @@ import com.building.House;
 import java.util.Stack;
 
 public class BuildingCaretaker{
-    private Stack<BuildingMemento> undoList;
-    private Stack<BuildingMemento> redoList;
+    private final Stack<BuildingMemento> undoList; //undo Memento list
+    private final Stack<BuildingMemento> redoList; //redo Memento list
 
     public BuildingCaretaker(){
         undoList = new Stack<>();
@@ -16,8 +16,8 @@ public class BuildingCaretaker{
     }
 
     /**
-     *
-     * @param building
+     * Save Class stats
+     * @param building Building
      */
     public void saveClass(Building building){
         redoList.clear();
@@ -31,7 +31,7 @@ public class BuildingCaretaker{
     }
 
     /**
-     *
+     * undo stats
      */
     public void undo(){
         if(!undoList.isEmpty()){
@@ -53,7 +53,7 @@ public class BuildingCaretaker{
     }
 
     /**
-     *
+     * redo stats
      */
     public void redo(){
         if(!redoList.isEmpty()){
