@@ -3,7 +3,6 @@ package com.command;
 import com.building.Building;
 import com.building.Room;
 import com.memento.RoomCaretaker;
-import com.memento.RoomMemento;
 
 import java.util.Scanner;
 import java.util.Stack;

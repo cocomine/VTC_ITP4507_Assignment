@@ -1,8 +1,5 @@
 package com.memento;
 
-import com.building.Apartment;
-import com.building.Building;
-import com.building.House;
 import com.building.Room;
 
 import java.util.Stack;

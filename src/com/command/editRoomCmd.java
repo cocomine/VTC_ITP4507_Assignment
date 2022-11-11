@@ -13,7 +13,7 @@ public class editRoomCmd implements Command{
     private final Stack<Command> undoList;
     private final Stack<Command> redoList;
     private final Scanner sc;
-    private RoomCaretaker roomCaretaker;
+    private final RoomCaretaker roomCaretaker;
 
 
     public editRoomCmd(HashMap<Integer, Building> buildings, Stack<Command> undoList, Stack<Command> redoList, Scanner sc, RoomCaretaker roomCaretaker){
