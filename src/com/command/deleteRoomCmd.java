@@ -14,7 +14,7 @@ public class deleteRoomCmd implements Command{
     private final Stack<Command> undoList;
     private final Stack<Command> redoList;
     private final Scanner sc;
-    private RoomMemento memento;
+    private double length, width;
 
     /**
      * Delete Room Command
@@ -36,9 +36,9 @@ public class deleteRoomCmd implements Command{
         System.out.println("Room No.:");
         index = sc.nextInt() - 1;
         if(index < building.getRoomQty() && index >= 0){
-            room = building.getRooms().get(index);
-            building.deleteRooms(index);//remove
-            memento = new RoomMemento(room);
+            room = building.getRooms().remove(index);
+            length = room.getLength();
+            width = room.getWidth();
 
             System.out.println("Updated Building:");
             building.printBuilding();
@@ -63,6 +63,6 @@ public class deleteRoomCmd implements Command{
 
     @Override
     public String toString(){
-        return "Delete Room: Building No. " + building.getId() + ", Room No. " + (index + 1) + ", " + memento;
+        return "Delete Room: Building No. " + building.getId() + ", Room No. " + (index + 1) + ", Length: "+length+", Width: "+width;
     }
 }

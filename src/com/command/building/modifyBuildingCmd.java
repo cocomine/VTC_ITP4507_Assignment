@@ -1,8 +1,9 @@
-package com.command;
+package com.command.building;
 
 import com.building.Apartment;
 import com.building.Building;
 import com.building.House;
+import com.command.Command;
 import com.memento.BuildingCaretaker;
 
 import java.util.HashMap;

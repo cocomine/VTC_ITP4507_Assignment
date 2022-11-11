@@ -1,6 +1,7 @@
-package com.command;
+package com.command.building;
 
 import com.building.Building;
+import com.command.Command;
 
 import java.util.*;
 

@@ -67,7 +67,7 @@ public class BuildingCaretaker{
                 new_memento = new HouseMemento((House) tmp);
             }
 
-            redoList.push(new_memento);
+            undoList.push(new_memento);
             memento.restore();
         }else {
             System.out.println("Nothing to redo.");

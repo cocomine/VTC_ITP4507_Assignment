@@ -14,7 +14,7 @@ public class addRoomCmd implements Command{
     private final Stack<Command> undoList;
     private final Stack<Command> redoList;
     private final Scanner sc;
-    private RoomMemento memento;
+    private double length, width;
 
     /**
      * Add Room Command
@@ -35,12 +35,11 @@ public class addRoomCmd implements Command{
     public void execute(){
         //create
         System.out.print("Length: ");
-        double length = sc.nextDouble();
+        length = sc.nextDouble();
         System.out.print("Width: ");
-        double width = sc.nextDouble();
+        width = sc.nextDouble();
         room = building.addRoom(length, width);
         index = building.getRooms().indexOf(room);
-        memento = new RoomMemento(room);
 
         //print
         System.out.println("Updated Building:");
@@ -63,6 +62,6 @@ public class addRoomCmd implements Command{
 
     @Override
     public String toString(){
-        return "Add Room: Building No. " + building.getId() + ", Room No. " + (index + 1) + ", " + memento;
+        return "Add Room: Building No. " + building.getId() + ", Room No. " + (index + 1) + ", Length: "+length+", Width: "+width;
     }
 }

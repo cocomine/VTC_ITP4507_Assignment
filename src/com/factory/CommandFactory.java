@@ -2,7 +2,10 @@ package com.factory;
 
 import com.building.Building;
 import com.command.*;
+import com.command.building.addBuildingCmd;
+import com.command.building.modifyBuildingCmd;
 import com.memento.BuildingCaretaker;
+import com.memento.RoomCaretaker;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -17,12 +20,12 @@ public class CommandFactory{
      * @param sc Scanner
      * @return Command
      */
-    public static Command createCmd(HashMap<Integer, Building> buildings, Stack<Command> undoList, Stack<Command> redoList, Scanner sc, BuildingCaretaker buildingCaretaker){
+    public static Command createCmd(HashMap<Integer, Building> buildings, Stack<Command> undoList, Stack<Command> redoList, Scanner sc, BuildingCaretaker buildingCaretaker, RoomCaretaker roomCaretaker){
         return switch(sc.next()){
             case "a" -> new addBuildingCmd(buildings, undoList, redoList, sc);
             case "d" -> new displayBuildingCmd(buildings, sc);
             case "m" -> new modifyBuildingCmd(buildings, undoList, redoList, sc, buildingCaretaker);
-            case "e" -> new editRoomCmd(buildings, undoList, redoList, sc);
+            case "e" -> new editRoomCmd(buildings, undoList, redoList, sc, roomCaretaker);
             case "u" -> new undoCmd(undoList, redoList);
             case "r" -> new redoCmd(undoList, redoList);
             case "l" -> new listUndoRedoCmd(undoList, redoList);
@@ -41,11 +44,11 @@ public class CommandFactory{
      * @param sc Scanner
      * @return Command
      */
-    public static Command createRoomCmd(Building building, Stack<Command> undoList, Stack<Command> redoList, Scanner sc){
+    public static Command createRoomCmd(Building building, Stack<Command> undoList, Stack<Command> redoList, Scanner sc, RoomCaretaker roomCaretaker){
         return switch(sc.next()){
             case "a" -> new addRoomCmd(building, undoList, redoList, sc);
             case "d" -> new deleteRoomCmd(building, undoList, redoList, sc);
-            case "m" -> new modifyRoomCmd(building, undoList, redoList, sc);
+            case "m" -> new modifyRoomCmd(building, undoList, redoList, sc, roomCaretaker);
             default -> null;
         };
     }

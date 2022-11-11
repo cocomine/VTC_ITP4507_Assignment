@@ -2,6 +2,7 @@ package com.command;
 
 import com.building.Building;
 import com.building.Room;
+import com.memento.RoomCaretaker;
 import com.memento.RoomMemento;
 
 import java.util.Scanner;
@@ -12,15 +13,24 @@ public class modifyRoomCmd implements Command{
     private final Stack<Command> undoList;
     private final Stack<Command> redoList;
     private final Scanner sc;
+    private final RoomCaretaker roomCaretaker;
     private int index;
-    private RoomMemento memento;
-    private RoomMemento currently;
+    private double length, width;
 
-    public modifyRoomCmd(Building building, Stack<Command> undoList, Stack<Command> redoList, Scanner sc){
+    /**
+     * Modify Room Command
+     * @param building Building
+     * @param undoList undo command list
+     * @param redoList redo command list
+     * @param sc Scanner
+     * @param roomCaretaker Room Caretaker
+     */
+    public modifyRoomCmd(Building building, Stack<Command> undoList, Stack<Command> redoList, Scanner sc, RoomCaretaker roomCaretaker){
         this.building = building;
         this.undoList = undoList;
         this.redoList = redoList;
         this.sc = sc;
+        this.roomCaretaker = roomCaretaker;
     }
 
     @Override
@@ -31,13 +41,12 @@ public class modifyRoomCmd implements Command{
         if(room == null) return;//if not match
 
         //modify
-        memento = new RoomMemento(room);
+        roomCaretaker.saveClass(room);
         System.out.print("Length: ");
-        double length = sc.nextDouble();
+        length = sc.nextDouble();
         System.out.print("Width: ");
-        double width = sc.nextDouble();
+        width = sc.nextDouble();
         building.modifyRoom(index, length, width);
-        currently = new RoomMemento(room);
 
         System.out.println("Updated Building:");
         building.printBuilding();
@@ -47,22 +56,16 @@ public class modifyRoomCmd implements Command{
 
     @Override
     public void undo(){
-        Room tmp = memento.getOrig();
-        RoomMemento amemento = new RoomMemento(tmp);
-        memento.restore();
-        memento = amemento;
+        roomCaretaker.undo();
     }
 
     @Override
     public void redo(){
-        Room tmp = memento.getOrig();
-        RoomMemento amemento = new RoomMemento(tmp);
-        memento.restore();
-        memento = amemento;
+        roomCaretaker.redo();
     }
 
     @Override
     public String toString(){
-        return "Modify Room: Building No. " + building.getId() + ", Room No. " + (index + 1) + ", " + currently;
+        return "Modify Room: Building No. " + building.getId() + ", Room No. " + (index + 1) + "Length: "+length+", Width: "+width;
     }
 }

@@ -1,6 +1,7 @@
-package com.command;
+package com.command.building;
 
 import com.building.House;
+import com.command.Command;
 import com.memento.BuildingCaretaker;
 
 import java.util.Scanner;

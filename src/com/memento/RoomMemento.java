@@ -22,9 +22,4 @@ public class RoomMemento implements Memento{
     public Room getOrig(){
         return room;
     }
-
-    @Override
-    public String toString(){
-        return "Length: "+length+", Width: "+width;
-    }
 }

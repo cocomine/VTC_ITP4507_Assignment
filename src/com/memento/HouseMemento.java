@@ -20,9 +20,4 @@ public class HouseMemento implements BuildingMemento{
     public Building getOrig(){
         return house;
     }
-
-    @Override
-    public String toString(){
-        return "Building No.: " + house.getId() + ", No. of Floor: " + noOfFloors;
-    }
 }
